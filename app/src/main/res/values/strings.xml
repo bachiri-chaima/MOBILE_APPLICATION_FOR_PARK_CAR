@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Garili Parking</string>
+
+    <style name="login">Login</style>
+
+    <string name="main_page_selected">%s is page selected</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="user_admin">
+        <item>utilisateur</item>
+        <item>administrateur</item>
+    </string-array>
+
+
+    <string name="password_titre">Modification mot de passe</string>
+    <string name="reservation_titre">Reservation succes</string>
+    <string name="txt_mot_de_passe">Saisir votre nouveau mot de passe :</string>
+</resources>

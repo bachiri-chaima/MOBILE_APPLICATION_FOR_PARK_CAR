@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/fragementhome"
+    tools:context=".home_garili">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"
+        app:titleTextColor="@color/pink2" />
+
+    <FrameLayout
+        android:id="@+id/frame_fragment"
+        android:layout_width="583dp"
+        android:layout_height="830dp"
+        app:layout_constraintBottom_toTopOf="@+id/meowBottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/meowBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:mbn_backgroundBottomColor="#D81B60"
+        app:mbn_circleColor="@color/circlecolor"
+        app:mbn_countBackgroundColor="@color/countbackgroundcolor"
+        app:mbn_countTextColor="@color/counttextcolor"
+        app:mbn_defaultIconColor="@color/defaulticonecolor"
+        app:mbn_selectedIconColor="#D81B60"
+        app:mbn_shadowColor="@color/shadowcolor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

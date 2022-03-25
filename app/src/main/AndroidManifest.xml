@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.gariliapllication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GariliApllication">
+
+
+        <activity android:name=".Liste_place_admin"
+            android:parentActivityName=".Add_reservation"
+            android:theme="@style/Theme.voiture"></activity>
+        <activity
+            android:name=".Reservation"
+            android:parentActivityName=".home_garili"
+            android:theme="@style/Theme.voiture" />
+        <activity
+            android:name=".Liste_place_client"
+            android:parentActivityName=".home_garili"
+            android:theme="@style/Theme.voiture" />
+        <activity
+            android:name=".Forget_password"
+            android:parentActivityName=".loginActivity"
+            android:theme="@style/Theme.forget" />
+        <activity
+            android:name=".Liste_place_charge"
+            android:label="Liste place charge"
+            android:theme="@style/Theme.place" />
+        <activity
+            android:name=".Update_reservation"
+            android:label="Modifier reservation"
+            android:parentActivityName=".Liste_reservation"
+            android:theme="@style/Theme.reservation" />
+        <activity
+            android:name=".Update_place"
+            android:label="Modifier place"
+            android:parentActivityName=".Liste_lot_parking"
+            android:theme="@style/Theme.place" />
+        <activity
+            android:name=".Update_client"
+            android:label="Modifier client"
+            android:parentActivityName=".Liste_client"
+            android:theme="@style/Theme.client" />
+        <activity
+            android:name=".Update_admin"
+            android:label="Modifier Administrateur"
+            android:parentActivityName=".Liste_admin"
+            android:theme="@style/Theme.admin" />
+        <activity
+            android:name=".Add_reservation"
+            android:label="Ajouter reservation"
+            android:parentActivityName=".Liste_reservation"
+            android:theme="@style/Theme.reservation" />
+        <activity
+            android:name=".Add_place"
+            android:label="Ajouter place parking"
+            android:parentActivityName=".Liste_lot_parking"
+            android:theme="@style/Theme.place" />
+        <activity
+            android:name=".Add_client"
+            android:label="Ajouter client"
+            android:parentActivityName=".Liste_client"
+            android:theme="@style/Theme.client" />
+        <activity
+            android:name=".Add_admin"
+            android:label="Ajouter administrateur"
+            android:parentActivityName=".Liste_admin"
+            android:theme="@style/Theme.admin" />
+        <activity
+            android:name=".Update_utilisteur"
+            android:label="Modifier utilisateure"
+            android:parentActivityName=".Liste_utulisateur"
+            android:theme="@style/Theme.listeutulisatur" />
+        <activity
+            android:name=".Add_utilisateur"
+            android:label="Ajouter utilisateure"
+            android:parentActivityName=".Liste_utulisateur"
+            android:theme="@style/Theme.listeutulisatur" />
+        <activity
+            android:name=".Liste_reservation"
+            android:label="Liste reservation"
+            android:theme="@style/Theme.reservation" />
+        <activity
+            android:name=".Liste_lot_parking"
+            android:label="Liste place parking"
+            android:theme="@style/Theme.place" />
+        <activity
+            android:name=".Liste_client"
+            android:label="Liste Client"
+            android:theme="@style/Theme.client" />
+        <activity
+            android:name=".Liste_admin"
+            android:label="Liste Adminstrateur"
+            android:theme="@style/Theme.admin" />
+        <activity
+            android:name=".Liste_utulisateur"
+            android:label="Liste utilisateures"
+            android:theme="@style/Theme.listeutulisatur" />
+        <activity
+            android:name=".Home_admin"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".home_garili"
+            android:theme="@style/Theme.home" />
+        <activity
+            android:name=".loginActivity"
+            android:theme="@style/Theme.GariliApllicationlogin" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.GariliApllication3Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDXjbx8kEaGwFMTk2yv1UoLGS3qCZZkXvw" />
+    </application>
+
+</manifest>
